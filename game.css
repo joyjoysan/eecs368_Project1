@@ -1,1 +1,61 @@
-
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body{
+    position: relative;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+body{
+    background-color: beige;
+}
+button{
+    z-index: 2;
+    position: absolute;
+}
+#buttonSlot1{
+    left: 434px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot2{
+    left: 523px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot3{
+    left: 612px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot4{
+    left: 701px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot5{
+    left: 791px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot6{
+    left: 880px;
+    top: 110px;
+    width: 5%;
+}
+#buttonSlot7{
+    left: 969px;
+    top: 110px;
+    width: 5%;
+}
+#canvas {
+    background: white;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
