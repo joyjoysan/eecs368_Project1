@@ -9,8 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const NUMX_BASE = 340;
     const NUMY_BASE = 95;
     const MULT_VALUE = 90; 
-    //let numxMultiplier = [0, 1, 2, 3, 4, 5, 6];
-    //let numyMultiplier = [0, 1, 2, 3, 4, 5,]; 
     let filledSlots = [false, false, false, false, false, false, false];
     //-----------------------------------------------------------
     //---------- Initialize canvas ------------------------------
@@ -120,7 +118,6 @@ window.addEventListener('DOMContentLoaded', () => {
     function playerRandomizer(){
         let f = Math.floor(Math.random() * 2);
         if (f == 0){
-            //console.log(localStorage.getItem("pvpPlayer1") + " goes first.");
             currentPlayer = player1;
             document.querySelector("#player1Name").style.backgroundColor = "aquamarine";
             for(let i = 0; i < allHoverPieces.length; i++){
@@ -460,15 +457,11 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[0][i] = "red";
                         recFindMatching4(0, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[0][i] = "yellow";
                         recFindMatching4(0, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
-                    //console.log(arr2DColor);
-                    //console.log("col: 0 row: " + i);
                     break;
                 }
             }
@@ -507,15 +500,11 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[1][i] = "red";
                         recFindMatching4(1, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[1][i] = "yellow";
                         recFindMatching4(1, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
-                    //console.log(arr2DColor);
-                    //console.log("col: 1 row: " + i);
                     break;
                 }
             }
@@ -554,12 +543,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[2][i] = "red";
                         recFindMatching4(2, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[2][i] = "yellow";
                         recFindMatching4(2, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
                     break;
                 }
@@ -599,12 +586,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[3][i] = "red";
                         recFindMatching4(3, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[3][i] = "yellow";
                         recFindMatching4(3, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
                     break;
                 }
@@ -644,12 +629,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[4][i] = "red";
                         recFindMatching4(4, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[4][i] = "yellow";
                         recFindMatching4(4, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
                     break;
                 }
@@ -689,12 +672,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[5][i] = "red";
                         recFindMatching4(5, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[5][i] = "yellow";
                         recFindMatching4(5, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
                     break;
                 }
@@ -734,12 +715,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(currentPlayer == player1){
                         arr2DColor[6][i] = "red";
                         recFindMatching4(6, numyMultiplierVal, "red", 0, "none");
-                        console.log("break");
                     }
                     else if (currentPlayer == player2){
                         arr2DColor[6][i] = "yellow";
                         recFindMatching4(6, numyMultiplierVal, "yellow", 0, "none");
-                        console.log("break");
                     }
                     break;
                 }

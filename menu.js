@@ -1,12 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let pvpButton = document.querySelector("#pvpButton");
-    let pvcButton = document.querySelector("#pvcButton");
-    let player1TextBox = document.querySelector("#player1TextBox");
-    let player2TextBox = document.querySelector("#player2TextBox");
-
-
-
-
     //START OF VERFYING PLAYER NAMES
 	document.querySelector("#submit").addEventListener("click",() => {
         let player1 = document.querySelector("#player1NameInput").value;
@@ -56,39 +48,5 @@ window.addEventListener('DOMContentLoaded', () => {
             window.location.href = "game.html";
         }
     });
-
-	document.querySelector("#pvcTextBoxSubmit").addEventListener("click",() => {
-        let pvcPlayer1Name = document.querySelector("#pvcPlayer1Input").value;
-        let pvcPlayer1NameIsValid = true;
-
-        if(pvcPlayer1Name == ""){
-            pvcPlayer1NameIsValid = false;
-            alert("Error: Name is required.");
-        }
-        if (pvcPlayer1NameIsValid == true){
-            for(let i = 0; i < pvcPlayer1Name.length; i++){
-                if(pvcPlayer1Name.charAt(i) == " "){
-                    pvcPlayer1NameIsValid = false;
-                    break;
-                }
-            }
-            if(pvcPlayer1NameIsValid == false){
-                alert("Sorry, player names cannot contain spaces.");
-            }
-        }
-        if(pvcPlayer1NameIsValid == true){
-            if(pvcPlayer1Name.length > 10 ){
-                pvcPlayer1NameIsValid = false;
-                alert("Player names cannot exceed 10 characters.");
-            }
-        }
-        if (pvcPlayer1NameIsValid == true){
-            window.localStorage.setItem('pvcPlayer1', JSON.stringify(pvcPlayer1Name));
-            window.location.href = "game.html";
-        }
-    });
     //END OF VERYFYING PLAYER NAMES
-
-
-
 });

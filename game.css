@@ -51,6 +51,7 @@ button{
     position: absolute;
     top: 160px;
     width: 5.5%;
+    border: none;
 
     cursor: pointer;
     outline: none;
@@ -331,6 +332,3 @@ canvas{
     background-color: rgb(255,223,0);
     border-color: rgb(231, 200, 0);
 }
-
-
-
