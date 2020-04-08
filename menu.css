@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(62, 159, 255);
+    position: relative;
+}
+.headers{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+}
+#welcome{
+    font-size: 40px;
+    top: 40px;
+    left: 420px;
+}
+#gameMode{
+    font-size: 30px;
+    top: 120px;
+    left: 495px;
+}
+button{
+    position: absolute;
+    background-color: wheat;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    left: 30px;
+    top: 400px;
+
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    outline: none;
+}
+#player2TextBox{
+    position: absolute;
+    color: black;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 20px solid rgb(255,223,0);
+
+    width : 350px;
+    height: 350px;
+    top: 100px;
+    left: 250px;
+
+    display: block;
+}
+#player1TextBox{
+    background-color: red;
+    color: black;
+    border-radius: 50%;
+    border: 20px solid crimson;
+
+    position: absolute;
+    width : 350px;
+    height: 350px;
+    top: 100px;
+    right: 150px;
+    display: block;
+}

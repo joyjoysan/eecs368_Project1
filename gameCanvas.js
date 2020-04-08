@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-
         function fillSquares(numx, numy){
             context.beginPath();
             context.rect(numx,numy,75,75);   
@@ -51,9 +50,5 @@ window.addEventListener('DOMContentLoaded', () => {
             context.fill();
         }
     }
-
-    
-
-
 
 });

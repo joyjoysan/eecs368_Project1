@@ -4,22 +4,44 @@
         <meta charset= "UTF-8" />
         <meta name = "viewport" content = "width=device-width,
         initial-scale=1.0" />
+        <!--
+            <script src = "gameCanvas.js"></script>
+        -->
         <script src = "game.js"></script>
-        <script src = "gameCanvas.js"></script>
         <link href = "game.css" rel = "stylesheet" type = "text/css"/>
     </head>
 
     <body>
-        <h1>Connect 4</h1>
-        <h2>Pass n Play PVP</h2>
-
-        <div id = "player1">Player 1</div>
-        <div id = "player2">Player 2</div>
+        <div id= "headerBar">
+            <h1>Connect 4</h1>
+            <h2>Pass n Play</h2>
+        </div>
+        <button id = "exitButton">EXIT</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id = "player1">Player 1:</div>
+        <div id = "player1Name"></div>
+        <div id = "player2">Player 2:</div>
+        <div id = "player2Name"></div>
 
         <div id = "wrapper">
             <canvas id = "canvas" height = "700"></canvas>
         </div>
 
+        <div id = "firstPlayerDisplay">
+            <p id = "firstPlayer"></p>
+            <p class = "extraText">goes first!</p>
+        </div>
+
+        <div id = "playerWonDisplay">
+            <p class = "extraText">The winner is...</p>
+            <p id = "whoWon"></p>
+            <button id = "backToMenu" disabled>Back to menu</button>
+            <button id = "rematch" disabled>Rematch</button>
+        </div>
 
         <!--Button Slots-->
         <button id = "buttonSlot1">&#9660</button>
@@ -30,6 +52,27 @@
         <button id = "buttonSlot6">&#9660</button>
         <button id = "buttonSlot7">&#9660</button>
         <!--Button Slot End-->
+
+        <div id = "lineOfSight">
+            <div id = "LOS1" class = "LOS"></div>
+            <div id = "LOS2" class = "LOS"></div>
+            <div id = "LOS3" class = "LOS"></div>
+            <div id = "LOS4" class = "LOS"></div>
+            <div id = "LOS5" class = "LOS"></div>
+            <div id = "LOS6" class = "LOS"></div>
+            <div id = "LOS7" class = "LOS"></div>
+
+        </div>
+
+        <div id = "hoverPiece">
+            <div id = "hoverPiece1" class = "hovPiece"></div>
+            <div id = "hoverPiece2" class = "hovPiece"></div>
+            <div id = "hoverPiece3" class = "hovPiece"></div>
+            <div id = "hoverPiece4" class = "hovPiece"></div>
+            <div id = "hoverPiece5" class = "hovPiece"></div>
+            <div id = "hoverPiece6" class = "hovPiece"></div>
+            <div id = "hoverPiece7" class = "hovPiece"></div>
+        </div>
 
 
     </body>
