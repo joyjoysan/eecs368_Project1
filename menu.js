@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+    localStorage.clear();
     //START OF VERFYING PLAYER NAMES
 	document.querySelector("#submit").addEventListener("click",() => {
         let player1 = document.querySelector("#player1NameInput").value;
