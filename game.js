@@ -188,14 +188,14 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector("#buttonSlot" + i).disabled = true;
             document.querySelector("#hoverPiece" + i).style.display = "none";
             document.querySelector("#LOS" + i).style.display = "none";
-        }
-        setTimeout(function(){
-            for(let i = 1; i <=7; i++){
-                if(filledSlots[i-1] == false){
-                    document.querySelector("#buttonSlot" + i).disabled = false;
-                }
+        } 
+    }
+    function reEnableSlotButtons(){
+        for(let i = 1; i<= 7; i++){
+            if(filledSlots[i-1] == false){
+                document.querySelector("#buttonSlot" + i).disabled = false;
             }
-        },300);
+        }
     }
     function recFindMatching4(col, row, color, numOfMatch, direction){ //recursive
         let colMaxVal = 6;
@@ -269,7 +269,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     return recFindMatching4(col-(numOfMatch + 1), row, color, numOfMatch, "west")
                 }
             }
-            if(direction == "southEast"){
+            if(col <= colMaxVal && row <= rowMaxVal && direction == "southEast"){
                 //col <= colMaxVal && row <= rowMaxVal && 
                 if(arr2DColor[col][row] == color){
                     return recFindMatching4(col+1, row+1, color, numOfMatch+=1, "southEast");
@@ -485,6 +485,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot2").addEventListener("click", () => {
@@ -528,6 +529,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot3").addEventListener("click", () => {
@@ -571,6 +573,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot4").addEventListener("click", () => {
@@ -614,6 +617,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot5").addEventListener("click", () => {
@@ -657,6 +661,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot6").addEventListener("click", () => {
@@ -700,6 +705,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //------------------------------------------------------------------------
     document.querySelector("#buttonSlot7").addEventListener("click", () => {
@@ -743,6 +749,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 switchCurrentPlayer();
             }
         }
+        reEnableSlotButtons();
     });
     //-------------------------------------------------------------------------------
     //---------------- Buttons in WinnerDisplay Window ------------------------------
